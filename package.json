@@ -1,0 +1,29 @@
+{
+  "name": "pokerstar-cypress",
+  "version": "1.0.0",
+  "description": "pokerstar demo framework with cypress and cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test:headless": "cypress run",
+    "test:headless-chrome": "cypress run --browser chrome",
+    "test:betslip":"cypress run --env tags=@betslip",
+    "test:betslip-chrome":"cypress run --browser chrome --env tags=@betslip",
+    "test:price-format":"cypress run --env tags=@price-format",
+    "test:price-format-chrome":"cypress run --browser chrome --env tags=@price-format",
+    "test:smoke":"cypress run --env tags=@smoke",
+    "test:smoke-firefox":"cypress run --browser firefox --env tags=@smoke"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber"
+  ],
+  "author": "Plaban Majumder",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^11.4.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "cypress": "^10.3.0",
+    "esbuild": "^0.14.48"
+  }
+}
